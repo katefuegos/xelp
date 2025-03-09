@@ -97,13 +97,10 @@ var plxDwnld = (function () {
         .replace("{baseuri}", baseUri)
         .replace("{partkey}", finalKey)
         .replace("{token}", accessToken);
-
+      
       navigator.clipboard.writeText(one).then(
         function () {
           alert("Download link copied to clipboard!");
-          window.close();
-          const win = window.open("", "_self");
-          win.close();
         },
         function (err) {
           alert("Failed to copy the link: " + err);
