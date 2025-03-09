@@ -127,6 +127,7 @@ var plxDwnld = (function () {
         .replace("{partkey}", finalKey)
         .replace("{token}", accessToken);
       console.log("one: ", one);
+      window.location.href = one;
     } else {
       alert("You are currently not viewing a media item.");
     }
