@@ -101,6 +101,7 @@ var plxDwnld = (function () {
       navigator.clipboard.writeText(one).then(
         function () {
           alert("Download link copied to clipboard!");
+          window.close();
         },
         function (err) {
           alert("Failed to copy the link: " + err);
